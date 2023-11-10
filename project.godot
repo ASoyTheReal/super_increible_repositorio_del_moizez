@@ -13,6 +13,11 @@ config_version=4
 config/name="Super MoizezRune"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=320
+window/size/height=240
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
