@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/susie_walking_right_2.png-99c45293946d7dd15bc1f88362bbd509.stex"
+path="res://.import/susie_walking_right_2.png-0669d34e7ae5f659dc07570db8c81895.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://owMov/assets/susie/susie_walking_right_2.png"
-dest_files=[ "res://.import/susie_walking_right_2.png-99c45293946d7dd15bc1f88362bbd509.stex" ]
+source_file="res://systems/owMov/assets/susie/susie_walking_right_2.png"
+dest_files=[ "res://.import/susie_walking_right_2.png-0669d34e7ae5f659dc07570db8c81895.stex" ]
 
 [params]
 

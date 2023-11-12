@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/kris_walking_left_3.png-cdec5cbe72b3b009e3c31d160485d344.stex"
+path="res://.import/kris_walking_left_3.png-50025d64c3b07a56530862bc9a0fb23e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://owMov/assets/ralsei/kris_walking_left_3.png"
-dest_files=[ "res://.import/kris_walking_left_3.png-cdec5cbe72b3b009e3c31d160485d344.stex" ]
+source_file="res://systems/owMov/assets/ralsei/kris_walking_left_3.png"
+dest_files=[ "res://.import/kris_walking_left_3.png-50025d64c3b07a56530862bc9a0fb23e.stex" ]
 
 [params]
 
