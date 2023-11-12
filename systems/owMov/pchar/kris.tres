@@ -1,0 +1,51 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://owMov/pchar_res.gd" type="Script" id=1]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [  ],
+"loop": true,
+"name": "down",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "left",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "up",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "w_down",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "w_left",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "w_right",
+"speed": 5.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "w_up",
+"speed": 5.0
+} ]
+
+[resource]
+script = ExtResource( 1 )
+id = ""
+animations = SubResource( 1 )
