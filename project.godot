@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Node",
+"class": "PhraseRes",
+"language": "GDScript",
+"path": "res://systems/ui/dialogSystem/phraseRes.gd"
+}, {
 "base": "Resource",
 "class": "pchar_dat",
 "language": "GDScript",
@@ -20,6 +25,7 @@ _global_script_classes=[ {
 "path": "res://systems/ui/dialogSystem/speaker.gd"
 } ]
 _global_script_class_icons={
+"PhraseRes": "",
 "pchar_dat": "",
 "speaker": ""
 }
@@ -29,18 +35,31 @@ _global_script_class_icons={
 config/name="Super MoizezRune"
 config/icon="res://icon.png"
 
+[autoload]
+
+GameplayManager="*res://autoload/gameplayManager.gd"
+
 [display]
 
 window/size/width=640
 window/size/height=480
 window/size/test_width=1066
 window/size/test_height=800
-window/stretch/mode="2d"
-window/stretch/aspect="keep"
+window/stretch/mode="viewport"
+window/stretch/aspect="keep_width"
 
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+cancel={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":88,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777220,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [physics]
 
