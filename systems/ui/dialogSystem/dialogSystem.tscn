@@ -48,7 +48,6 @@ text = "* Test dialog 0
 scroll_active = false
 
 [node name="portraitText" type="Control" parent="boxTexture"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 
@@ -83,3 +82,5 @@ margin_bottom = 25.0
 texture = ExtResource( 2 )
 
 [node name="textTimer" type="Timer" parent="."]
+
+[node name="voice_sfx" type="AudioStreamPlayer" parent="."]
