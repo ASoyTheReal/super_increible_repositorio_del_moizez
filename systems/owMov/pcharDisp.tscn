@@ -1,15 +1,26 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://dk2yv54d5o1qd"]
 
-[ext_resource path="res://systems/owMov/pcharEmptyAnim.tres" type="SpriteFrames" id=1]
-[ext_resource path="res://systems/owMov/assets/kris/kris_walking_down_1.png" type="Texture" id=2]
-[ext_resource path="res://systems/owMov/pcharDisp.gd" type="Script" id=3]
+[ext_resource type="SpriteFrames" uid="uid://calr110k4300o" path="res://systems/owMov/pcharEmptyAnim.tres" id="1"]
+[ext_resource type="Script" path="res://systems/owMov/pcharDisp.gd" id="3"]
 
-[node name="pchar" type="KinematicBody2D"]
-script = ExtResource( 3 )
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tl2sf"]
+radius = 9.0
+height = 40.0
 
-[node name="animations" type="AnimatedSprite" parent="."]
-frames = ExtResource( 1 )
-animation = "w_up"
+[node name="pchar" type="CharacterBody2D"]
+collision_layer = 16
+collision_mask = 2
+script = ExtResource("3")
 
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 2 )
+[node name="animations" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1")
+animation = &"down"
+frame = 1
+offset = Vector2(0, -23)
+
+[node name="camera" type="Camera2D" parent="."]
+enabled = false
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, -23)
+shape = SubResource("CapsuleShape2D_tl2sf")

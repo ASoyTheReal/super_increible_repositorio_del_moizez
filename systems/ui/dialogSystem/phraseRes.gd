@@ -6,4 +6,4 @@ var text : String
 var speed : float = 0.03
 var can_skip : bool = true
 var voice : AudioStream
-var portrait : Texture
+var portrait : Texture2D

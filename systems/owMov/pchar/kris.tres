@@ -1,51 +1,26 @@
-[gd_resource type="Resource" load_steps=3 format=2]
+[gd_resource type="Resource" script_class="pchar_dat" load_steps=5 format=3 uid="uid://ji8cthrnc20n"]
 
-[ext_resource path="res://owMov/pchar_res.gd" type="Script" id=1]
+[ext_resource type="Texture2D" uid="uid://dykif66mv0uca" path="res://systems/owMov/assets/kris/kris_walking_down_1.png" id="1_f36wt"]
+[ext_resource type="Script" path="res://systems/owMov/pchar_res.gd" id="1_tq4ig"]
 
-[sub_resource type="SpriteFrames" id=1]
-animations = [ {
-"frames": [  ],
+[sub_resource type="SpriteFrames" id="SpriteFrames_q8s61"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_f36wt")
+}],
 "loop": true,
-"name": "down",
+"name": &"down",
 "speed": 5.0
-}, {
-"frames": [  ],
-"loop": true,
-"name": "left",
-"speed": 5.0
-}, {
-"frames": [  ],
-"loop": true,
-"name": "right",
-"speed": 5.0
-}, {
-"frames": [  ],
-"loop": true,
-"name": "up",
-"speed": 5.0
-}, {
-"frames": [  ],
-"loop": true,
-"name": "w_down",
-"speed": 5.0
-}, {
-"frames": [  ],
-"loop": true,
-"name": "w_left",
-"speed": 5.0
-}, {
-"frames": [  ],
-"loop": true,
-"name": "w_right",
-"speed": 5.0
-}, {
-"frames": [  ],
-"loop": true,
-"name": "w_up",
-"speed": 5.0
-} ]
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hxkf2"]
+radius = 9.0
+height = 40.0
 
 [resource]
-script = ExtResource( 1 )
-id = ""
-animations = SubResource( 1 )
+script = ExtResource("1_tq4ig")
+id = "kris"
+animations = SubResource("SpriteFrames_q8s61")
+sprite_offset = Vector2(0, -19)
+collision_shape = SubResource("CapsuleShape2D_hxkf2")

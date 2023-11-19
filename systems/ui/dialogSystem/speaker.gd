@@ -2,12 +2,8 @@ extends Resource
 
 class_name speaker
 
-export var id : String
-export var darkner : bool
-export var unique_font : DynamicFont
+@export var id : String
+@export var darkner : bool
+@export var unique_font : FontFile
 
-var empty_texture : StreamTexture
-
-export var portraits : Dictionary = {
-	"meme" : empty_texture
-}
+@export var expresions : Array[PortraitDat]

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="pchar_dat" load_steps=5 format=3 uid="uid://d2xc8f3i0bdbe"]
+
+[ext_resource type="Texture2D" uid="uid://crki0tuglp43m" path="res://systems/owMov/assets/ralsei/kris_walking_down_1.png" id="1_5tycy"]
+[ext_resource type="Script" path="res://systems/owMov/pchar_res.gd" id="2_j7uxc"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q8s61"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_5tycy")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_to78m"]
+radius = 9.0
+height = 40.0
+
+[resource]
+script = ExtResource("2_j7uxc")
+id = "ralsei"
+animations = SubResource("SpriteFrames_q8s61")
+sprite_offset = Vector2(0, -20.5)
+collision_shape = SubResource("CapsuleShape2D_to78m")

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="pchar_dat" load_steps=5 format=3 uid="uid://hoejy5jhxvub"]
+
+[ext_resource type="Texture2D" uid="uid://b5uqavbkq2bts" path="res://systems/owMov/assets/susie/susie_walking_down_1.png" id="1_o1pqc"]
+[ext_resource type="Script" path="res://systems/owMov/pchar_res.gd" id="2_gorit"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7jooy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_o1pqc")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tl2sf"]
+height = 44.0
+
+[resource]
+script = ExtResource("2_gorit")
+id = "susie"
+animations = SubResource("SpriteFrames_7jooy")
+sprite_offset = Vector2(0, -23)
+collision_shape = SubResource("CapsuleShape2D_tl2sf")

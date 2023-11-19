@@ -1,44 +1,57 @@
-[gd_resource type="SpriteFrames" format=2]
+[gd_resource type="SpriteFrames" load_steps=4 format=3 uid="uid://calr110k4300o"]
+
+[ext_resource type="Texture2D" uid="uid://crki0tuglp43m" path="res://systems/owMov/assets/ralsei/kris_walking_down_1.png" id="1_0gdm5"]
+[ext_resource type="Texture2D" uid="uid://db8ev3p33f2kj" path="res://systems/owMov/assets/kris/kris_sprites_walking_4.png" id="1_epdh5"]
+[ext_resource type="Texture2D" uid="uid://dqdvi20iojj2h" path="res://systems/owMov/assets/susie/susie_walking_down_2.png" id="3_20v7s"]
 
 [resource]
-animations = [ {
-"frames": [  ],
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_epdh5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_0gdm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_20v7s")
+}],
 "loop": true,
-"name": "down",
+"name": &"down",
 "speed": 5.0
 }, {
-"frames": [  ],
+"frames": [],
 "loop": true,
-"name": "left",
+"name": &"left",
 "speed": 5.0
 }, {
-"frames": [  ],
+"frames": [],
 "loop": true,
-"name": "right",
+"name": &"right",
 "speed": 5.0
 }, {
-"frames": [  ],
+"frames": [],
 "loop": true,
-"name": "up",
+"name": &"up",
 "speed": 5.0
 }, {
-"frames": [  ],
+"frames": [],
 "loop": true,
-"name": "w_down",
+"name": &"w_down",
 "speed": 5.0
 }, {
-"frames": [  ],
+"frames": [],
 "loop": true,
-"name": "w_left",
+"name": &"w_left",
 "speed": 5.0
 }, {
-"frames": [  ],
+"frames": [],
 "loop": true,
-"name": "w_right",
+"name": &"w_right",
 "speed": 5.0
 }, {
-"frames": [  ],
+"frames": [],
 "loop": true,
-"name": "w_up",
+"name": &"w_up",
 "speed": 5.0
-} ]
+}]

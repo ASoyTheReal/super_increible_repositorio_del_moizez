@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3 uid="uid://bxgkt5w6f26b8"]
+
+[ext_resource type="Script" path="res://mod/test/testCutscene.gd" id="1_utegj"]
+[ext_resource type="Texture2D" uid="uid://c2iwkkkkvqo13" path="res://mod/test/basement.png" id="2_jo3y1"]
+[ext_resource type="PackedScene" uid="uid://bkhd2vadera4l" path="res://systems/owMov/party.tscn" id="3_jksx8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c05dk"]
+
+[node name="testCutscene" type="Node2D"]
+script = ExtResource("1_utegj")
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(511, 78)
+texture = ExtResource("2_jo3y1")
+
+[node name="party" parent="." instance=ExtResource("3_jksx8")]
+position = Vector2(51, 215)
+
+[node name="walls" type="Node2D" parent="."]
+
+[node name="wall_0" type="StaticBody2D" parent="walls"]
+position = Vector2(511, 0)
+scale = Vector2(63.88, 1)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/wall_0"]
+shape = SubResource("RectangleShape2D_c05dk")
+
+[node name="wall_1" type="StaticBody2D" parent="walls"]
+position = Vector2(511, 413)
+scale = Vector2(63.88, 1)
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/wall_1"]
+shape = SubResource("RectangleShape2D_c05dk")
+
+[node name="wall_2" type="StaticBody2D" parent="walls"]
+position = Vector2(1163, 202)
+rotation = 1.5708
+scale = Vector2(31.92, 1)
+collision_layer = 2
+collision_mask = 0
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/wall_2"]
+shape = SubResource("RectangleShape2D_c05dk")
+
+[node name="wall_3" type="StaticBody2D" parent="walls"]
+position = Vector2(-137, 203)
+rotation = 1.5708
+scale = Vector2(31.92, 1)
+collision_layer = 2
+collision_mask = 0
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="walls/wall_3"]
+shape = SubResource("RectangleShape2D_c05dk")

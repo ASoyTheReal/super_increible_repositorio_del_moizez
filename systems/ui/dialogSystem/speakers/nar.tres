@@ -1,10 +1,9 @@
-[gd_resource type="Resource" load_steps=2 format=2]
+[gd_resource type="Resource" script_class="speaker" load_steps=2 format=3 uid="uid://wd08f2kyn3hr"]
 
-[ext_resource path="res://systems/ui/dialogSystem/speaker.gd" type="Script" id=1]
+[ext_resource type="Script" path="res://systems/ui/dialogSystem/speaker.gd" id="1"]
 
 [resource]
-script = ExtResource( 1 )
+script = ExtResource("1")
 id = ""
 darkner = false
-portraits = {
-}
+expresions = Array[Resource("res://systems/ui/dialogSystem/portrait_dat.gd")]([])

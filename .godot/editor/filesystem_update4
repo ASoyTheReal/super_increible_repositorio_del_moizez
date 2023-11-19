@@ -1,0 +1,17 @@
+res://default_env.tres
+res://systems/ui/dialogSystem/dialogSystem.tscn
+res://systems/owMov/testRoom.tscn
+res://mod/scenes/testCutscene.tscn
+res://systems/owMov/party.tscn
+res://systems/owMov/pcharDisp.tscn
+res://systems/owMov/party.gd
+res://systems/ui/dialogSystem/dialogSystem.gd
+res://autoload/gameplayManager.gd
+res://systems/owMov/pchar_res.gd
+res://systems/owMov/pchar/kris.tres
+res://systems/owMov/pchar/susie.tres
+res://systems/owMov/pchar/ralsei.tres
+res://autoload/globalResourceContainer.gd
+res://mod/test/testCutscene.tscn
+res://systems/owMov/pcharEmptyAnim.tres
+res://mod/gdRes/pchar/ASoy.tres

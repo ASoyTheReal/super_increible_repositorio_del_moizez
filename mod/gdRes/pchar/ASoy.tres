@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="pchar_dat" load_steps=4 format=3 uid="uid://dgvbjvotfi54o"]
+
+[ext_resource type="Texture2D" uid="uid://crki0tuglp43m" path="res://systems/owMov/assets/ralsei/kris_walking_down_1.png" id="1_ej6eq"]
+[ext_resource type="Script" path="res://systems/owMov/pchar_res.gd" id="2_lm6gm"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q8s61"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ej6eq")
+}],
+"loop": true,
+"name": &"down",
+"speed": 5.0
+}]
+
+[resource]
+script = ExtResource("2_lm6gm")
+id = "asoy"
+animations = SubResource("SpriteFrames_q8s61")
+sprite_offset = Vector2(0, -19)
